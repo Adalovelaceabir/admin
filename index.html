@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPortal Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <img src="../images/logo-white.png" alt="NewsPortal Logo">
+                <h2>NewsPortal</h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="posts.html"><i class="fas fa-newspaper"></i> Posts</a></li>
+                    <li><a href="categories.html"><i class="fas fa-tags"></i> Categories</a></li>
+                    <li><a href="users.html"><i class="fas fa-users"></i> Users</a></li>
+                    <li><a href="#"><i class="fas fa-comments"></i> Comments</a></li>
+                    <li><a href="#"><i class="fas fa-ad"></i> Advertisements</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="#" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Top Bar -->
+            <header class="admin-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+                    <h2>Dashboard</h2>
+                </div>
+                
+                <div class="header-right">
+                    <div class="notifications">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge">3</span>
+                        </button>
+                    </div>
+                    
+                    <div class="user-profile">
+                        <img src="../images/admin-avatar.jpg" alt="Admin Avatar">
+                        <span>Admin User</span>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Dashboard Content -->
+            <div class="admin-content">
+                <div class="stats-grid">
+                    <!-- Stat Card 1 -->
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: #3498db;">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total Posts</h3>
+                            <p>1,248</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Card 2 -->
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: #2ecc71;">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Today's Views</h3>
+                            <p>24,589</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Card 3 -->
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: #e74c3c;">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Registered Users</h3>
+                            <p>8,742</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Card 4 -->
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: #f39c12;">
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>New Comments</h3>
+                            <p>156</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Posts Table -->
+                <div class="content-section">
+                    <div class="section-header">
+                        <h3>Recent Posts</h3>
+                        <a href="posts.html" class="view-all">View All</a>
+                    </div>
+                    
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Author</th>
+                                    <th>Date</th>
+                                    <th>Views</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1245</td>
+                                    <td>Global Leaders Agree on Historic Climate Accord</td>
+                                    <td>Politics</td>
+                                    <td>John Smith</td>
+                                    <td>2025-06-20</td>
+                                    <td>12,458</td>
+                                    <td><span class="status published">Published</span></td>
+                                    <td>
+                                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1244</td>
+                                    <td>New AI System Can Predict Health Issues</td>
+                                    <td>Technology</td>
+                                    <td>Sarah Johnson</td>
+                                    <td>2025-06-19</td>
+                                    <td>8,742</td>
+                                    <td><span class="status published">Published</span></td>
+                                    <td>
+                                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1243</td>
+                                    <td>Major Merger Creates Renewable Energy Giant</td>
+                                    <td>Business</td>
+                                    <td>Michael Chen</td>
+                                    <td>2025-06-19</td>
+                                    <td>6,521</td>
+                                    <td><span class="status published">Published</span></td>
+                                    <td>
+                                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1242</td>
+                                    <td>Underdog Team Stuns Champions in Finals</td>
+                                    <td>Sports</td>
+                                    <td>David Wilson</td>
+                                    <td>2025-06-18</td>
+                                    <td>15,893</td>
+                                    <td><span class="status published">Published</span></td>
+                                    <td>
+                                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1241</td>
+                                    <td>Breakthrough Study Links Gut Bacteria to Reduced Anxiety</td>
+                                    <td>Health</td>
+                                    <td>Emma Rodriguez</td>
+                                    <td>2025-06-18</td>
+                                    <td>9,456</td>
+                                    <td><span class="status draft">Draft</span></td>
+                                    <td>
+                                        <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <button class="quick-btn">
+                        <i class="fas fa-plus"></i>
+                        <span>Add New Post</span>
+                    </button>
+                    <button class="quick-btn">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Add New User</span>
+                    </button>
+                    <button class="quick-btn">
+                        <i class="fas fa-tag"></i>
+                        <span>Add New Category</span>
+                    </button>
+                    <button class="quick-btn">
+                        <i class="fas fa-ad"></i>
+                        <span>Manage Ads</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="../js/admin.js"></script>
+</body>
+  </html>
